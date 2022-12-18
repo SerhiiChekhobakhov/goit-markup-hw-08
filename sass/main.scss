@@ -1,0 +1,27 @@
+// Змінні та шрифти
+@import "./utils/vars";
+
+// Базові стилі, розмітка секцій, контейнери, тощо
+@import "./components/base/reset";
+@import "./components/base/hidden";
+@import "./components/base/common";
+
+// Стилі хедеру
+@import "./components/layouts/header";
+// Герой
+@import "./components/layouts/hero";
+// Стилі футеру
+@import "./components/layouts/footer";
+@import "./components/layouts/footer-contacts";
+@import "./components/layouts/footer-input";
+
+// Компоненти
+@import "./components/activities";
+@import "./components/clients";
+@import "./components/modal";
+@import "./components/peculiarities";
+@import "./components/team";
+
+// Компоненти Портфоліо
+@import "./components/portfolio-filters";
+@import "./components/portfolio-products";

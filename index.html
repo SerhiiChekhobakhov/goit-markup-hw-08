@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Студія</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!--Шапка-->
+    <header class="page__header">
+      <!--Логотип-->
+      <!--Навігація-->
+      <div class="container container__header">
+        <nav class="header__navigation">
+          <a href="./index.html" class="header__logo"
+            ><span class="web__logo">Web</span>Studio</a
+          >
+          <ul class="header__menu">
+            <li>
+              <a href="./index.html" class="header__link current">Студія</a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="header__link">Портфоліо</a>
+            </li>
+            <li><a href="" class="header__link">Контакти</a></li>
+          </ul>
+        </nav>
+        <!--Контакти-->
+        <ul class="contacts__menu">
+          <!--Посилання на email адресу-->
+          <li>
+            <a href="mailto:info@devstudio.com" class="contacts__link">
+              <svg class="contacts__icon" width="16px" height="12px">
+                <use href="./images/sprite.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <!--Посилання на номер телефону-->
+          <li>
+            <a href="tel:+380961111111" class="contacts__link">
+              <svg class="contacts__icon" width="10px" height="16px">
+                <use href="./images/sprite.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section section__hero">
+        <!--Герой-->
+        <div class="container">
+          <h1 class="hero__title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+          <button
+            type="button"
+            name="request-our-service"
+            class="hero__button"
+            data-modal-open
+          >
+            Замовити послугу
+          </button>
+        </div>
+      </section>
+      <!--Особливості-->
+      <section class="section">
+        <div class="container">
+          <h2 class="visually__hidden">Особливості</h2>
+          <ul class="peculiarities__list">
+            <li class="peculiarities__item">
+              <h3 class="peculiarities__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="peculiarities__text">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+            <li class="peculiarities__item">
+              <h3 class="peculiarities__title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="peculiarities__text">
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
+            <li class="peculiarities__item">
+              <h3 class="peculiarities__title">ПЛАНУВАННЯ</h3>
+              <p class="peculiarities__text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="peculiarities__item">
+              <h3 class="peculiarities__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="peculiarities__text">
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--Діяльність-->
+      <section class="section section__activities">
+        <div class="container">
+          <h2 class="section__title">Чим ми займаємося</h2>
+          <ul class="activities__list">
+            <li>
+              <div class="activities__thumb">
+                <img
+                  src="./images/desktop-apps.jpg"
+                  alt="Десктопні додатки"
+                  width="370"
+                  class="activities__photo"
+                />
+                <div class="activities__actions">
+                  <h3 class="activities__title">ДЕСКТОПНІ ДОДАТКИ</h3>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="activities__thumb">
+                <img
+                  src="./images/mobile-apps.jpg"
+                  alt="Мобільні додатки"
+                  width="370"
+                  class="activities__photo"
+                />
+                <div class="activities__actions">
+                  <h3 class="activities__title">МОБІЛЬНІ ДОДАТКИ</h3>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="activities__thumb">
+                <img
+                  src="./images/design-solutions.jpg"
+                  alt="Дизайнерські рішення"
+                  width="370"
+                  class="activitie__-photo"
+                />
+                <div class="activities__actions">
+                  <h3 class="activities__title">ДИЗАЙНЕРСЬКІ РІШЕННЯ</h3>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!--Наша команда-->
+      <section class="section section__team">
+        <div class="container">
+          <h2 class="section__title">Наша команда</h2>
+          <ul class="team__list">
+            <li class="team__card">
+              <img
+                src="./images/christopher-walker.jpg"
+                alt="Ігор Дем'яненко"
+                width="270"
+                class="employee-photo"
+              />
+              <div class="team__thumb">
+                <h3 class="team__employee">Ігор Дем'яненко</h3>
+                <p lang="en" class="team__position">Product Designer</p>
+                <ul class="joinus__employee">
+                  <li class="joinus__item">
+                    <a href="" class="joinus__link">
+                      <svg class="joinus__icon">
+                        <use href="./images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="joinus__item">
+                    <a href="" class="joinus__link">
+                      <svg class="joinus__icon">
+                        <use href="./images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="joinus__item">
+                    <a href="" class="joinus__link">
+                      <svg class="joinus__icon">
+                        <use href="./images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="joinus__item">
+                    <a href="" class="joinus__link">
+                      <svg class="joinus__icon">
+                        <use href="./images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team__card">
+              <img
+                src="./images/kylie-evans.jpg"
+                alt="Ольга Рєпіна"
+                width="270"
+                class="employee-photo"
+              />
+              <div class="team__thumb">
+                <h3 class="team__employee">Ольга Рєпіна</h3>
+                <p lang="en" class="team__position">Frontend Developer</p>
+                <ul class="joinus__employee">
+                  <li class="joinus__item">
+                    <a href="" class="joinus__link">
+                      <svg class="joinus__icon" width="44px" height="44px">
+                        <use
+                          href="./images/sprite.svg#instagram"
+                          width="20"
+                          height="20"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="joinus__item">
+                    <a href="" class="joinus__link">
+                      <svg class="joinus__icon" width="44" height="44">
+                        <use
+                          href="./images/sprite.svg#twitter"
+                          width="20"
+                          height="20"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="joinus__item">
+                    <a href="" class="joinus__link">
+                      <svg class="joinus__icon" width="44" height="44">
+                        <use
+                          href="./images/sprite.svg#facebook"
+                          width="20"
+                          height="20"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="joinus__item">
+                    <a href="" class="joinus__link">
+                      <svg class="joinus__icon" width="44" height="44">
+                        <use
+                          href="./images/sprite.svg#linkedin"
+                          width="20"
+                          height="20"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team__card">
+              <img
+                src="./images/ryan-harris.jpg"
+                alt="Микола Тарасов"
+                width="270"
+                class="employee-photo"
+              />
+              <div class="team__thumb">
+                <h3 class="team__employee">Микола Тарасов</h3>
+                <p lang="en" class="team__position">Marketing</p>
+                <ul class="joinus__employee">
+                  <li class="joinus__item">
+                    <a href="" class="joinus__link">
+                      <svg class="joinus__icon" width="44px" height="44px">
+                        <use
+                          href="./images/sprite.svg#instagram"
+                          width="20"
+                          height="20"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="joinus__item">
+                    <a href="" class="joinus__link">
+                      <svg class="joinus__icon" width="44" height="44">
+                        <use
+                          href="./images/sprite.svg#twitter"
+                          width="20"
+                          height="20"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="joinus__item">
+                    <a href="" class="joinus__link">
+                      <svg class="joinus__icon" width="44" height="44">
+                        <use
+                          href="./images/sprite.svg#facebook"
+                          width="20"
+                          height="20"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="joinus__item">
+                    <a href="" class="joinus__link">
+                      <svg class="joinus__icon" width="44" height="44">
+                        <use
+                          href="./images/sprite.svg#linkedin"
+                          width="20"
+                          height="20"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team__card">
+              <img
+                src="./images/tyler-moore.jpg"
+                alt="Михайло Єрмаков"
+                width="270"
+                class="employee-photo"
+              />
+              <div class="team__thumb">
+                <h3 class="team__employee">Михайло Єрмаков</h3>
+                <p lang="en" class="team__position">UI Designer</p>
+                <ul class="joinus__employee">
+                  <li class="joinus__item">
+                    <a href="" class="joinus__link">
+                      <svg class="joinus__icon" width="44px" height="44px">
+                        <use
+                          href="./images/sprite.svg#instagram"
+                          width="20"
+                          height="20"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="joinus__item">
+                    <a href="" class="joinus__link">
+                      <svg class="joinus__icon" width="44" height="44">
+                        <use
+                          href="./images/sprite.svg#twitter"
+                          width="20"
+                          height="20"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="joinus__item">
+                    <a href="" class="joinus__link">
+                      <svg class="joinus__icon" width="44" height="44">
+                        <use
+                          href="./images/sprite.svg#facebook"
+                          width="20"
+                          height="20"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="joinus__item">
+                    <a href="" class="joinus__link">
+                      <svg class="joinus__icon" width="44" height="44">
+                        <use
+                          href="./images/sprite.svg#linkedin"
+                          width="20"
+                          height="20"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Клієнти -->
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title">Постійні клієнти</h2>
+          <ul class="clients__list">
+            <li>
+              <a href="" class="clients__link">
+                <svg width="106" height="60">
+                  <use href="./images/sprite.svg#yako"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="clients__link">
+                <svg width="106" height="60">
+                  <use href="./images/sprite.svg#company"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="clients__link">
+                <svg width="106" height="60">
+                  <use href="./images/sprite.svg#company-second"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="clients__link">
+                <svg width="106" height="60">
+                  <use href="./images/sprite.svg#foster-peters"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="clients__link">
+                <svg width="106" height="60">
+                  <use href="./images/sprite.svg#brand"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="clients__link">
+                <svg width="106" height="60">
+                  <use href="./images/sprite.svg#company-third"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container container__footer">
+        <div class="logo-adress">
+          <a href="./index.html" lang="en" class="footer__logo"
+            ><span class="web__logo">Web</span>Studio</a
+          >
+          <address>
+            <!--Адреса-->
+            <ul class="footer__list">
+              <li>
+                <a
+                  href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265411,30.5382865,18.82z/data=!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  class="footer__adress"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <!--Посилання на email адресу-->
+              <li>
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="footer__contacts mail"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <!--Посилання на номер телефону-->
+              <li>
+                <a href="tel:+380961111111" class="footer__contacts tel"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="joinus">
+          <h3 class="joinus__title">ПРИЄДНУЙТЕСЬ</h3>
+          <ul class="joinus__list">
+            <li class="joinus__item">
+              <a href="" class="footer__joinus">
+                <svg class="joinus__icon">
+                  <use
+                    href="./images/sprite.svg#instagram"
+                    width="20"
+                    height="20"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="joinus__item">
+              <a href="" class="footer__joinus">
+                <svg class="joinus__icon">
+                  <use href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="joinus__item">
+              <a href="" class="footer__joinus">
+                <svg class="joinus__icon">
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="joinus__item">
+              <a href="" class="footer__joinus">
+                <svg class="joinus__icon">
+                  <use href="./images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <form action="">
+            <label>
+              <h3 class="subscribe__title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h3>
+              <input
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                class="subscribe__input"
+              />
+            </label>
+            <button type="submit" class="subscribe__button">
+              Підписатися<svg class="subscribe__icon">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close__button" data-modal-close>
+          <svg class="close__icon">
+            <use href="./images/cross.svg#cross"></use>
+          </svg>
+        </button>
+        <h3 class="modal__title">Залиште свої дані, ми вам передзвонимо</h3>
+        <form>
+          <label class="label__form">
+            <span class="modal__formtitle">Ім'я</span>
+            <div class="modal__field">
+              <input
+                type="text"
+                name="username"
+                placeholder=""
+                class="modal__form"
+              />
+              <svg class="modal__icon">
+                <use href="./images/icons.svg#person-black"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="label__form">
+            <span class="modal__formtitle">Телефон</span>
+            <div class="modal__field">
+              <input
+                type="tel"
+                name="phone_number"
+                placeholder=""
+                class="modal__form"
+              />
+              <svg class="modal__icon">
+                <use href="./images/icons.svg#phone-black"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="label__form">
+            <span class="modal__formtitle">Пошта</span>
+            <div class="modal__field">
+              <input
+                type="email"
+                name="email"
+                placeholder=""
+                class="modal__form"
+              />
+              <svg class="modal__icon">
+                <use href="./images/icons.svg#email-black"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="label__comment">
+            <span class="modal__formtitle">Коментар</span>
+            <textarea
+              name="comment"
+              rows="7"
+              class="modal__comment"
+              placeholder="Введіть текст"
+            ></textarea>
+          </label>
+          <label class="modal__chekbox">
+            <input
+              type="checkbox"
+              name="topic"
+              value="Погоджуюся з розсилкою та приймаю Умови договору"
+              class="chekbox"
+            />
+            <svg class="chekbox__icon">
+              <use></use>
+            </svg>
+            <p class="checkbox__text">
+              Погоджуюся з розсилкою та приймаю
+              <a href="" class="checkbox__agreement">Умови договору</a>
+            </p>
+          </label>
+          <button type="submit" class="modal__button">Відправити</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

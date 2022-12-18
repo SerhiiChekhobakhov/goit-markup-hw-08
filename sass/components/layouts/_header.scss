@@ -1,0 +1,121 @@
+/* Логотип */
+
+.header__logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--logo-color-black);
+  text-decoration: none;
+}
+
+.web__logo {
+  color: var(--logo-color-blue);
+}
+
+/* Навігація */
+
+.page__header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border: 1px solid #ececec;
+}
+
+.header__navigation {
+  display: flex;
+  align-items: center;
+  gap: 93px;
+}
+
+.header__menu {
+  margin: 0;
+  display: flex;
+  gap: 50px;
+  padding: 0;
+}
+
+.header__link {
+  position: relative;
+  padding-bottom: 34px;
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+  transition: color var(--transition-timing) var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--hover-link-color);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--background-color-button);
+    transition: opacity var(--transition-timing) var(--timing-function);
+  }
+  &:hover::after,
+  &:focus::after {
+    opacity: 1;
+  }
+  &.current {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--hover-link-color);
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      opacity: 1;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: var(--background-color-button);
+      transition: opacity var(--transition-timing) var(--timing-function);
+    }
+  }
+}
+
+/* Контакти в навігації */
+
+.contacts__menu {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.contacts__link {
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  transition: color var(--transition-timing) var(--timing-function),
+    fill var(--transition-timing) var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--hover-link-color);
+    fill: var(--hover-link-color);
+  }
+}
+
+.contacts__icon {
+  fill: currentColor;
+  margin: 0 10px 0 0;
+}

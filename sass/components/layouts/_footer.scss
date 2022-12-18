@@ -1,0 +1,54 @@
+/* Футер */
+
+.footer {
+  background-color: var(--background-color-footer);
+  padding: 60px 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* Логотип у футері */
+
+.footer__logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--logo-color-white);
+  text-decoration: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+/* Адреса та контакти */
+
+.container__footer {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__list {
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 0;
+  li {
+    margin-bottom: 9px;
+  }
+  li:last-child {
+    margin: 0;
+  }
+}
+
+/* Адреса у футері */
+
+.footer__adress {
+  font-style: normal;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--background-color);
+  text-decoration: none;
+}

@@ -1,0 +1,29 @@
+// Секція
+
+.section {
+  padding: 94px 0;
+  &.section__activities {
+    padding-top: 0;
+  }
+  &__title {
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+}
+
+// Контейнер
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  padding: 0 15px;
+  &.container__header {
+    display: flex;
+    justify-content: space-between;
+    gap: 344px;
+  }
+}

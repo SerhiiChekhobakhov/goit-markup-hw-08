@@ -1,0 +1,56 @@
+/* Особливості */
+
+.peculiarities__list {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  gap: 30px;
+}
+
+.peculiarities__item {
+  display: inline;
+  &::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--section-block-grey);
+    margin-bottom: 30px;
+    border-radius: 4px;
+  }
+  &:nth-child(1)::before {
+    background-image: url(../images/antenna.svg);
+  }
+  &:nth-child(2)::before {
+    background-image: url(../images/clock.svg);
+  }
+  &:nth-child(3)::before {
+    background-image: url(../images/diagram.svg);
+  }
+  &:nth-child(4)::before {
+    background-image: url(../images/astronaut.svg);
+  }
+}
+
+.peculiarities__title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.peculiarities__text {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+
+  margin: 0;
+  width: 270px;
+}
